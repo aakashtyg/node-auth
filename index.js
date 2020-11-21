@@ -1,6 +1,8 @@
 const express = require('express');
 
 const db = require('./config/mongoose');
+const passport = require('passport');
+const passportJwt = require('./config/passportJWTstrategy');
 const PORT = 8000;
 const app = express();
 const morgan = require('morgan');
@@ -16,3 +18,5 @@ app.listen(PORT, function (error) {
 
   console.log('Server is running!');
 });
+
+app.use(passport.initialize());
