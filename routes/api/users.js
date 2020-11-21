@@ -6,7 +6,7 @@ const usersApiController = require('../../controller/api/usersApi');
 router.get('/', usersApiController.index);
 
 // means - /api/users/login
-router.get('/login', () => {});
+router.post('/login', usersApiController.login);
 
 // means - /api/users/signup
 router.post('/signup', usersApiController.signup);
