@@ -8,5 +8,5 @@ app.use('/', require('./routes'));
 app.listen(PORT, function (error) {
   if (error) console.log('error : ', error);
 
-  console.log('Server is runing!');
+  console.log('Server is running!');
 });
